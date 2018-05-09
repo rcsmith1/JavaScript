@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<script>
+
+// For demo 3
+window.alert(5 + 5);
+
+// For demo 4
+console.log(5 + 5);
+
+</script>
+
+<style type="text/css">
+body	{ font: small verdana,sans-serif ; padding: 30px ; }
+h1	{ font: bold medium verdana,sans-serif ; padding-bottom: 10px ; border-bottom: 2px solid #ccc ; margin: 0 0 30px 0 ; }
+h2	{ font: bold small verdana,sans-serif ; margin-top: 20px ; }
+a	{ color: #00f ; text-decoration: underline ; }
+a:hover	{ color: #f00 ; text-decoration: none ; }
+span	{ color: #f00 ; font-weight: bold ; }
+</style>
+
+<title>JavaScript output</title>
+</head>
+
+<body>
+<h1>JavaScript functions, generating output</h1>
+<p>This will be a useful reference for debugging code and testing functions when working through the 
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript" target="_blank">JavaScript refresher tutorial</a></p>
+<p>An article here on JavaScript output - 
+  <a href="https://www.w3schools.com/js/js_output.asp" target="_blank">https://www.w3schools.com/js/js_output.asp</a></p>
+
+<h2>Testing the different methods used on the page above with a simple 5 + 5 sum</h2>
+
+<ol>
+  <li>Using the getElementById function - <span id="demo1"></span></li>
+  <li>Using the document.write function - <span>
+    <script>
+      //for demo 2
+      document.write(5 + 5);
+    </script>
+  </span></li>
+  <li>Using the window alert - (Should've already been displayed when loading the page)</li>
+  <li>Output to console log - Visible when viewing the console log</li>
+</ol>
+
+
+<em>Extra credit:</em> Using the document.write function and String concatenation - <span>
+    <script>
+      // for demo 2a
+      // Uses string concatenation, but be careful of how to separate out the arthmetic functions from the string
+      document.write("The answer is: " + (5 + 5)) ;
+    </script>
+  </span></li>
+
+
+
+<script>
+// For demo 1
+// Annoyingly, it looks like this code needs to be placed beneath the element it references
+document.getElementById("demo1").innerHTML = 5 + 5;
+</script>
+
+
+</body>
+</html>
